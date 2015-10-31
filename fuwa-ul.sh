@@ -20,7 +20,7 @@ else
 			printf 'error uploading file!\n'
 			exit 1
 		else
-            printf "\nLink: $(echo ${out} | jq -r '.url')\n"
+            printf "\nLink: $(echo ${out} | jq -r '.file.url')\n"
 		fi
 		((n++))
 	done
